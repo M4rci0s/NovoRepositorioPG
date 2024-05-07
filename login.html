@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js" defer></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <nav>
+            <div class="logo">
+                <span id="empresa">Empresa</span>
+            </div>
+            <ul id="lista-menu">
+                <li><a href="#">Preciso de um técnico</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+                <li><a href="#">Contato</a></li>
+                <li id="btnlogin"><a href="/login.html">Faça login</a></li>
+            </ul>
+
+            <button type="submit" id="btncadastre">Cadastre-se</button>
+        </nav>
+    </header>
+    <form class="form">
+        <p class="form-title">Entre em sua conta</p>
+        <div class="input-container">
+            <a id="voltar" href="/index.html">Voltar</a>
+            <p class="email">Email</p>
+            <input type="email" id="email" placeholder="Digite seu email">
+            <span>
+            </span>
+        </div>
+        <div class="input-container">
+            <p class="senha">Senha</p>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+            <p id="mensagem">Sua senha é: <span id="mensagemreal"></span></p>
+        </div>
+
+        <button type="submit" class="submit" onclick="logar(); return false">
+            Entrar
+        </button>
+
+        <p class="signup-link">
+            Não possui conta?
+            <a href="/cadastro.html">Cadastre-se</a>
+        </p>
+    </form>
+</body>
+
+</html>

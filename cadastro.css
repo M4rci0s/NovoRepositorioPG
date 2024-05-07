@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f7f7f7;
+
+}
+
+#lista-menu {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+#lista-menu>li>a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-style: normal;
+
+}
+
+#lista-menu>li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+#cabecalho {
+    max-width: 1400px;
+    padding-top: 1rem;
+    padding-left: 1%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-style: italic;
+    color: #35AD5E;
+    font-weight: bold;
+}
+
+#lista-menu>li>a:hover {
+    color: #35AD5E;
+
+}
+
+#btncadastre {
+    background-color: #35AD5E;
+    color: #f7f7f7;
+    padding: 1rem;
+    font-size: 12px;
+    border-radius: 16px;
+    margin-right: 1%;
+}
+
+.form {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #222222;
+    background-color: #fff;
+}
+
+.input-container {
+    position: relative;
+    background-color: #fff;
+}
+
+.input-containe p {
+    background-color: #fff;
+}
+
+
+.input-container input,
+.form button {
+    outline: none;
+    border: 1px solid #cbccce;
+    margin: 8px 0;
+
+}
+
+.input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    background-color: #fff;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+    display: block;
+    padding-top: 0.75rem;
+
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #35AD5E;
+    color: #f7f7f7;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.signup-link {
+    background-color: #fff;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.signup-link a {
+    background-color: #fff;
+    text-decoration: underline;
+    color: #35AD5E;
+    padding-top: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #35AD5E;
+
+}
+
+.email {
+    background-color: white;
+    color: #222222;
+    padding-top: 3px;
+}
+
+.nome {
+    background-color: white;
+    color: #222222;
+    padding-top: 20px;
+}
+
+
+
+.senha {
+    background-color: white;
+    color: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#lista-menu {
+    text-decoration: none;
+    list-style: none;
+    background-color: #f7f7f7;
+
+}
+
+#lista-menu>li>a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-style: normal;
+    background-color: #f7f7f7;
+
+}
+
+#lista-menu>li {
+    display: inline-block;
+    margin: 1rem;
+    background-color: #f7f7f7;
+}
+
+#cabecalho {
+    max-width: 1400px;
+    padding-top: 1rem;
+    padding-left: 1%;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+}
+
+nav.logo {
+    font-size: 26px;
+    font-style: italic;
+    color: #35AD5E;
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+
+#lista-menu>li>a:hover {
+    color: #35AD5E;
+
+}
+
+#btncadastre {
+    background-color: #35AD5E;
+    color: #f7f7f7;
+    padding: 1rem;
+    font-size: 12px;
+    border-radius: 16px;
+    margin-right: 1%;
+
+}
+
+#empresa {
+    background-color: #f7f7f7;
+    color: #35AD5E;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+
+
+}
+
+#voltar {
+    background-color: #f7f7f7;
+    text-decoration: none;
+    color: #35AD5E;
+    font-weight: bold;
+}
+
+#mensagem {
+    display: none;
+    background-color: #f7f7f7;
+}
+
+#mensagemreal {
+    background-color: #f7f7f7;
+}
