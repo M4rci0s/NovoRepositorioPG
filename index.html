@@ -1,38 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all
+    .min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFc
+    V7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <title>Projeto de Software</title>
+    <title>Remartech</title>
 </head>
-
 <body>
-    <header id="cabecalho">
-        <nav>
-            <div class="logo">
-                <span id="empresa">Empresa</span>
-            </div>
-            <ul id="lista-menu">
-                <li><a href="#">Preciso de um técnico</a></li>
-                <li><a href="#">Trabalhe conosco</a></li>
-                <li><a href="#">Contato</a></li>
-                <li id="btnlogin"><a href="/login.html">Faça login</a></li>
+    <section id="header" class="section-p1">
+        <a href="#"><img src="emartech.jpg" alt="Logo RemarTech" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="preciso.html">Preciso de um técnico</a></li>
+                <li><a href="trabalhe.html">Trabalhe conosco</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Faça login</a></li>
+                <li><button id="cadastre">Cadastre-se</button></li>
             </ul>
+            
+        </div>
+    </section>
 
-            <button type="submit" id="btncadastre">Cadastre-se</button>
-        </nav>
-    </header>
+    <section id="banner" class="section-p1">
+        <img class="imagemfoda" src="https://f.hubspotusercontent40.net/hubfs/8767745/Personagem_SistemasInforma%C3%A7%C3%A3o-1.png" alt="">
+        <h4>Precisa de socorro?</h4>
+        <h1>Procurando um <span>Técnico?</span></h1>
+        <p>Deixe seus dispositivos nas mãos certas!
+        Contate nossos técnicos para o serviço que necessita.
+        </p>
+        <button>Encontrar um técnico</button>
+    </section>
 
+    <section id="maisbuscados" class="section-p1">
+        <h2 class="principtext">Serviços mais buscados</h2>
+        <p class="subtext">E mais realizados</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="/emartech.jpg" alt="">
+                <div class="des">
+                    <h5>Reparo de dispositivos</h5>
+                    <span>Consertar computadores quebrados
+                    e substituir componentes defeituosos.</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="/emartech.jpg" alt="">
+                <div class="des">
+                    <h5>Configuração de rede</h5>
+                    <span> Configurar redes locais (LANs), 
+                    redes sem fio (Wi-Fi), roteadores e switches.</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="/emartech.jpg" alt="">
+                <div class="des">
+                    <h5>Remoção de virus e malware</h5>
+                    <span>Escanear e limpar sistemas infectados por 
+                    vírus, spyware, adware e outros tipos de malware.</span>
+                </div>
+            </div>
+            
+            <div class="pro">
+                <img src="/emartech.jpg" alt="">
+                <div class="des">
+                    <h5>Manutenção preventiva</h5>
+                    <span> Antecipação de problemas através de inspeções 
+                    regulares e ações corretivas para evitar falhas e maximizar
+                    o desempenho.</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="/emartech.jpg" alt="">
+                <div class="des">
+                    <h5>Atualização e otimização do sistema</h5>
+                    <span> Garantir que os sistemas estejam atualizados com as 
+                    últimas atualizações de segurança e otimizar o desempenho 
+                    do sistema</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="/emartech.jpg" alt="">
+                <div class="des">
+                    <h5>Instalação de software</h5>
+                    <span>Instalar e configurar sistemas operacionais, 
+                    programas de software, drivers e atualizações.</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="quemsomos" class="section-p1">
+        <h2>Quem Somos?</h2>
+        <p>A RemarTech é uma plataforma online que conecta pessoas que precisam de serviços 
+        em dispositivos, como reparos, configuração de computadores, entre outros, a técnicos parceiros
+        cadastrados na plataforma. Com o objetivo de facilitar a contratação de serviços de forma
+        conveniente e transparente, tanto para prestadores de serviços quanto para clientes.</p>
+    </section>
+
+    <section id="barra" class="section-p1">
+        <div class="newstext"></div>
+        <h4>Seja um técnico parceiro da RemarTech</h4>
+        <button>Cadastre-se como técnico</button>
+    </section>
 </body>
-
 </html>

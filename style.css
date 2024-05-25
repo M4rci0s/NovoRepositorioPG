@@ -1,64 +1,318 @@
+@import url('https://fonts.cdnfonts.com/css/spartan');
+
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #f7f7f7;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #F7F7F7;
 
 }
 
-#lista-menu {
-    text-decoration: none;
-    list-style: none;
-
-}
-
-#lista-menu>li>a {
-    text-decoration: none;
+h1 {
+    font-size: 50px;
+    line-height: 64px;
     color: #222222;
-    font-size: 14px;
-    font-style: normal;
-
 }
 
-#lista-menu>li {
-    display: inline-block;
-    margin: 1rem;
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222222;
 }
 
-#cabecalho {
-    max-width: 1400px;
-    padding-top: 1rem;
-    padding-left: 1%;
-    margin: 0 auto;
+h4 {
+    font-size: 20px;
+    color: #222222;
 }
 
-nav {
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #222222;
+    margin: 15px 0 20px 0;
+}
+
+section-p1 {
+    padding: 40px 80px;
+}
+
+section-m1 {
+    margin: 40px 0;
+}
+
+/*Cabeçalho/Header*/
+.logo {
+    width: 14rem;
+}
+
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 6px 80px;
+    background-color: #eaedf8;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
-nav .logo {
-    font-size: 26px;
-    font-style: italic;
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    transition: 0.3s ease;
+}
+
+/*Fazer o highlight e underline do texto da página que está*/
+#navbar li a:hover,
+#navbar li a.active {
     color: #35AD5E;
-    font-weight: bold;
 }
 
-#lista-menu>li>a:hover {
-    color: #35AD5E;
-
-}
-
-#btncadastre {
+/*Cria o underline*/
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
     background-color: #35AD5E;
-    color: #f7f7f7;
-    padding: 1rem;
-    font-size: 12px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*Banner abaixo do cabeçalho*/
+#banner {
+    /*colocar foto n sei como*/
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #eaedf8;
+}
+
+#banner h4 {
+    padding-bottom: 15px;
+}
+
+#banner h1 span {
+    color: #35AD5E;
+}
+
+#banner button {
+    background-color: #35AD5E;
+    color: #F7F7F7;
     border-radius: 16px;
-    margin-right: 1%;
+    border: none;
+    padding: 14px 80px 14px 65px;
+    text-align: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+#banner button:hover {
+    background-color: #56b979;
+}
+
+#maisbuscados {
+    background-color: #35AD5E;
+}
+
+.principtext {
+    color: #eaedf8;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 38px;
+    padding-bottom: 4px;
+}
+
+.subtext {
+    color: #eaedf8;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 500;
+
+}
+
+.mb-box h6 {
+    padding-top: 10px;
+}
+
+#cadastre {
+    background-color: #35AD5E;
+    color: #F7F7F7;
+    border-radius: 14px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+#cadastre:hover {
+    background-color: #56b979;
+}
+
+#maisbuscados {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+    place-items: center;
+}
+
+#maisbuscados .pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 1090px;
+}
+
+#maisbuscados .pro {
+    width: 23%;
+    min-width: 280px;
+    width: 350px;
+
+    padding: 10px 12px;
+    color: #eaedf8;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#maisbuscados .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.des h5 {
+    padding: 10px 0 10px;
+    font-size: 1.1rem;
+}
+
+#maisbuscados .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    width: 120px;
+}
+
+#maisbuscados .pro .des {
+    text-align: center;
+    padding: 8px 0;
+}
+
+#maisbuscados .pro .des h5 {
+    padding-top: 7px;
+}
+
+#maisbuscados .pro .des span {
+    line-height: 16px;
+}
+
+.imagemfoda {
+    max-width: 700px;
+    position: absolute;
+    left: 1000px;
+    min-width: 300px;
+
+}
+
+#quemsomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+}
+
+#quemsomos h2 {
+    padding: 10px 0;
+    color: #35AD5E;
+}
+
+#quemsomos p {
+    width: 70%;
+}
+
+#barra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #35AD5E;
+    height: 10vh;
+    position: absolute;
+    padding-right: 40px;
+    left: 12%;
+}
+
+#barra h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #eaedf8;
+    padding-right: 600px;
+    padding-left: 40px;
+}
+
+#barra button {
+    color: #eaedf8;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: 1px solid #eaedf8;
+    border-radius: 16px;
+    padding: 10px 16px 10px 16px;
+    transition: 0.2s ease;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#barra button:hover {
+    background-color: #eaedf8;
+    color: #35AD5E;
 }

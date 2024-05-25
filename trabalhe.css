@@ -1,0 +1,239 @@
+@import url('https://fonts.cdnfonts.com/css/spartan');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #35AD5E;
+
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #222222;
+    margin: 15px 0 20px 0;
+}
+
+section-p1 {
+    padding: 40px 80px;
+}
+
+section-m1 {
+    margin: 40px 0;
+}
+
+/*Cabeçalho/Header*/
+.logo {
+    width: 14rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 80px;
+    background-color: #eaedf8;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    transition: 0.3s ease;
+}
+
+/*Fazer o highlight e underline do texto da página que está*/
+#navbar li a:hover,
+#navbar li a.active {
+    color: #35AD5E;
+}
+
+/*Cria o underline*/
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #35AD5E;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+.form-box {
+    max-width: 500px;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+}
+
+/*Form text*/
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+/*Inputs box*/
+.form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+}
+
+.input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: .9rem;
+    padding: 8px 15px;
+}
+
+.form-section {
+    padding: 16px;
+    font-size: .85rem;
+    background-color: #e0fbe3;
+    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+    font-weight: bold;
+    color: #35AD5E;
+    transition: color .3s ease;
+}
+
+.form-section a:hover {
+    color: #005ce6;
+    text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+    background-color: #35AD5E;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.form button:hover {
+    background-color: #7ab68e;
+}
+
+.pdf {
+    padding: 10px 10px;
+    border-radius: 16px;
+}
+
+.label {
+    padding-bottom: 10px;
+}
+
+.captcha {
+    margin: 15px 0;
+}
+
+.captcha .preview {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #888;
+    font-family: monospace;
+
+}
+
+.captcha {
+    display: inline-block;
+    user-select: none;
+}
+
+.captcha .captcha-form {
+    display: flex;
+}
+
+.captcha .captcha-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #888;
+}
+
+.captcha .captcha-form .captcha-refresh {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

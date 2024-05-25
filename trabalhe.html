@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trabalhe.css">
+    <script src="trabalhe.js" defer></script>
+</head>
+<body>
+    <section id="header" class="section-p1">
+        <a href="#"><img src="emartech.jpg" alt="Logo RemarTech" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="preciso.html">Preciso de um técnico</a></li>
+                <li><a href="trabalhe.html">Trabalhe conosco</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Faça login</a></li>
+                <li><button id="cadastre">Cadastre-se</button></li>
+            </ul>
+            
+        </div>
+    </section>
+    <div class="form-box">
+        <form class="form">
+            <span class="title">Cadastrar-se</span>
+            <span class="subtitle">Crie sua conta como técnico de forma simples!</span>
+            <div class="form-container">
+              <input type="text" class="input" placeholder="Nome Completo">
+              <input type="text" class="input" placeholder="CPF ou CNPJ">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="password" class="input" placeholder="Senha">
+                    <label class="label" for="">Insira seu currículo em formato PDF:</label>
+                    <input class="pdf" type="file" name="Currículo" id="">
+                    <div class="captcha">
+                        <label for="captcha-label">Digite o Captcha</label>
+                        <div class="preview"></div>
+                        <div class="captcha-form">
+                            <input type="text" id="captcha-form" placeholder="Digite o texto que do captcha">
+                            <button class="captcha-refresh" >Gerar outro</button>
+                        </div>
+                    </div>
+
+            </div>
+            <button class="btncadastro">Cadastrar</button>
+        </form>
+        <div class="form-section">
+          <p>Possui uma conta? <a href="">Log in</a> </p>
+        </div>
+        </div>
+</body>
+</html>
