@@ -1,0 +1,13 @@
+#boxDesc{
+    display: none;
+    margin-bottom: 10px;
+}
+
+#btnEnviar{
+    display: none;
+    margin-bottom: 10px;
+}
+
+#btnDesc{
+    display:block;
+}
