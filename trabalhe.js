@@ -3,6 +3,7 @@
     let captchaValue = ""
     function gerarCaptcha(){
         let value = btoa(Math.random()*10000000000);
+        //Corta a string para ter entre 5 e 10 caracteres.
         value = value.substring(0,5+Math.random()*5)
         captchaValue = value;
     }
@@ -35,9 +36,37 @@
     document.querySelector("#btncadastro").addEventListener("click", function(){
         let inputCaptchaValue = document.querySelector(".captcha-form input").value;
         if(inputCaptchaValue === captchaValue){
-            alert("cadastro Concluido")
+            alert("cadastro Concluido");
         }else{
-            alert("captcha invalido")
+            alert("captcha invalido");
         }
     });
-})();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cpfInput = document.getElementById('cpf');
+
+    cpfInput.addEventListener('input', function() {
+        let value = cpfInput.value;
+
+        // Remove todos os caracteres que não são dígitos
+        value = value.replace(/\D/g, '');
+
+        // Limita o valor a 11 caracteres
+        if (value.length > 11) {
+            value = value.slice(0, 11);
+        }
+
+        // Adiciona a formatação de pontos e hífen
+        if (value.length > 6) {
+            value = value.slice(0, 3) + '.' + value.slice(3, 6) + '.' + value.slice(6, 9) + '-' + value.slice(9, 11);
+        } else if (value.length > 3) {
+            value = value.slice(0, 3) + '.' + value.slice(3, 6) + (value.length > 6 ? '.' + value.slice(6) : '');
+        } else if (value.length > 3) {
+            value = value.slice(0, 3) + '.' + value.slice(3, 6);
+        }
+
+        // Atualiza o valor do input com a formatação
+        cpfInput.value = value;
+    });
+});
